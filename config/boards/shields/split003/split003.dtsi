@@ -30,30 +30,5 @@
         wakeup-source;
     };
 
-    // disabled by default - only on left side
-    left_encoder: encoder_left {
-        compatible = "alps,ec11";
-        steps = <15>;
-        status = "disabled";
-    };
-
-    // disabled by default - only on right side
-    right_encoder: encoder_right {
-        compatible = "alps,ec11";
-        steps = <15>;
-        status = "disabled";
-    };
-
-    sensors: sensors {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&right_encoder &left_encoder>;
-
-        right_encoder {
-            triggers-per-rotation = <15>;
-        };
-
-        left_encoder {
-            triggers-per-rotation = <15>;
-        };
-    };
+    
 };

@@ -1,7 +1,7 @@
 #include "split003.dtsi"
 
 &default_transform {
-col-offset = <10>; 
+col-offset = <7>; 
 };
 
 &kscan {

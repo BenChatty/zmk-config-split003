@@ -20,6 +20,5 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: split003_left
-  - board: seeeduino_xiao_ble
-    shield: split003_right
+    shield: split003
+  

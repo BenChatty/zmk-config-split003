@@ -18,22 +18,23 @@
 };
 
 
-
+&pinctrl {
     /* configuration for xiao_i2c device, default state */
-   &xiao_i2c_default {
+   xiao_i2c_default: xiao_i2c_default {
         group1 {
-            psels = <NRF_PSEL(TWIM_SDA, 0, 4)>,
-                <NRF_PSEL(TWIM_SCL, 0, 5)>;
+            psels = <NRF_PSEL(TWIM_SDA, 1, 11)>,
+                <NRF_PSEL(TWIM_SCL, 1, 12)>;
         };
     };
 
-    &xiao_i2c_sleep {
+    xiao_i2c_sleep: xiao_i2c_sleep {
         group1 {
-            psels = <NRF_PSEL(TWIM_SDA, 0, 4)>,
-                <NRF_PSEL(TWIM_SCL, 0, 5)>;
+            psels = <NRF_PSEL(TWIM_SDA, 1,11)>,
+                <NRF_PSEL(TWIM_SCL, 1, 12)>;
             low-power-enable;
         };
     };
+};
 
 &xiao_i2c {
     compatible = "nordic,nrf-twim";

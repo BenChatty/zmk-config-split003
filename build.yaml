@@ -24,3 +24,4 @@ include:
     snippet: zmk-usb-logging
   - board: seeeduino_xiao_ble
     shield: split003_right
+    snippet: zmk-usb-logging

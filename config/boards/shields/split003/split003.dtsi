@@ -28,6 +28,7 @@
         status = "okay";
         wakeup-source;
     };
+};
 
 &xiao_i2c {
     compatible = "nordic,nrf-twim";
@@ -47,4 +48,4 @@
 };
 
     
-};
+
